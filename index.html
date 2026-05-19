@@ -17,7 +17,79 @@
     </header>
 
     <main>
+        <section class="dashboard-grid">
+            <article class="card">
+                <div class="card-header">
+                    <h3>total de entardas</h3>
+                    <span class="icon">👥</span>
+                </div>
+                <p class="card-value">124</p>
+            </article>
+            <article class="card">
+                <div class="card-header">
+                    <h3>ultima entrada</h3>
+                    <span class="icon">📅</span>
+                </div>
+                <p class="card-value">18 May 2026</p>
+            </article>
+            <article class="card">
+                <div class="card-header">
+                    <h3>categoria popular</h3>
+                    <span class="icon">📊</span>
+                </div>
+                <p class="card-value">trabajo</p>
+            </article>
+        </section>
 
+        <section class="dashboard-chart-section">
+            <h2>entradas diarias</h2>
+            <div class="chart-placeholder">
+                <p class="text-muted">espacio para grafico lineal</p>
+            </div>
+        </section>
+
+        <section class="container-form">
+            <h2>añadir nueva entrada</h2>
+            <form action="#" method="post" class="main-form">
+                <div class="form-row">
+                    <h4>titulo</h4>
+                    <div class="form-group">
+                        <label for="titulo">Titulo</label>
+                        <input type="text" id="titulo" name="titulo" placeholder="resume vitacora">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="categoria">Categotia</label>
+                        <select name="categoria" id="categoria" required>
+                            <option value="" disabled selected>seleccona una opcion</option>
+                            <option value="trabajo">Trabajo</option>
+                            <option value="personal">Personal</option>
+                            <option value="ideas">Ideas</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="valoracion">Valoracion</label>
+                        <select id="valoracion" name="valoracion" required>
+                            <option value="5">⭐⭐⭐⭐⭐(Excelente)</option>
+                            <option value="4">⭐⭐⭐⭐(Bueno)</option>
+                            <option value="3">⭐⭐⭐(Regular)</option>
+                            <option value="2">⭐⭐(Malo)</option>
+                            <option value="1">⭐(Pesimo)</option>
+                        </select>
+                    </div>
+                </div>
+
+                
+            </form>
+        </section>
     </main>
 
     <footer>
