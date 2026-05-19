@@ -67,8 +67,18 @@
 
         <section class="dashboard-chart-section">
             <h2>entradas diarias</h2>
-            <div class="chart-placeholder">
-                <p class="text-muted">espacio para grafico lineal</p>
+            <div class="container-dashboard">
+                <svg viewBox="0 0 500 200" preserveAspectRadio="none" class="chart-svg">
+                    <defs>
+                        <linearGradient id="chart-gradient" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.2"/>
+                            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.0"/>
+                        </linearGradient>
+                    </defs>
+
+                    <path d="M 0 200 Q 100 150 200 120 T 400 60 T 500 40 L 500 200 Z" fill="url(#chart-gradient)"></path>
+                    <path d="M 0 200 Q 100 150 200 120 T 400 60 T 500 40" fill="none" stroke="#3b82f6" stroke-width="3"></path>
+                </svg>
             </div>
         </section>
 
