@@ -3,19 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles-inicio.css">
+    <link rel="stylesheet" href="styles-menu-lateral.css">
+    <link rel="stylesheet" href="styles-formulario.css">
     <title>Mi Pag Web Inicial</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>graficos</li>
-                <li>ingreso datos</li>
-                <li>tabla de datos</li>
-            </ul>
-        </nav>
-    </header>
+        <input type="checkbox" id="btn-menu" class="checkbox-control">
+        <label for="btn-menu" class="toggle-btn">☰</label>
+
+        <div class="layout-container">
+            <nav class="sidebar">
+                <div class="sidebar-header">
+                    <h3>mi pag web</h3>
+                </div>
+                <ul class="sidebar-menu">
+                    <li>
+                        <a href="index.html">
+                            <span class="menu-icon">📊</span>
+                            <span class="menu-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="registro.html">
+                            <span class="menu-icon">🗒️</span>
+                            <span class="menu-text">Registro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="datos.html">
+                            <span class="menu-icon">📋</span>
+                            <span class="menu-text">Historial</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
     <main>
         <section class="dashboard-grid">
@@ -90,7 +112,7 @@
 
                 <div class="form-group-full-width">
                     <label for="descripcion">Descripcion</label>
-                    <textarea name="descripcion" id="descripcion" rows="6" placeholder="escripbe los detalles aqui... required"></textarea>
+                    <textarea name="descripcion" id="descripcion" rows="6" placeholder="escripbe los detalles aqui..." required></textarea>
                 </div>
                 <div class="form-actions-full-width">
                     <button type="submit" class="btn-submit">Guardar Entrada</button>
