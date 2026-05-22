@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menu-lateral.css">
-    <link rel="stylesheet" href="formulario.css">
     <link rel="stylesheet" href="dashboard.css">
     <title>Mi Pag Web Inicial</title>
 </head>
@@ -31,7 +30,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="datos.html">
+                        <a href="historial.html">
                             <span class="menu-icon">📋</span>
                             <span class="menu-text">Historial</span>
                         </a>
@@ -81,59 +80,6 @@
                 </svg>
             </div>
         </section>
-
-        <section class="container-form">
-            <h2>añadir nueva entrada</h2>
-            <form action="#" method="post" class="main-form">
-                <div class="form-row">
-                    <h4>titulo</h4>
-                    <div class="form-group">
-                        <label for="titulo">Titulo</label>
-                        <input type="text" id="titulo" name="titulo" placeholder="resume vitacora">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="fecha">Fecha</label>
-                    <input type="date" required>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="categoria">Categotia</label>
-                        <select name="categoria" id="categoria" required>
-                            <option value="" disabled selected>seleccona una opcion</option>
-                            <option value="trabajo">Trabajo</option>
-                            <option value="personal">Personal</option>
-                            <option value="ideas">Ideas</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="valoracion">Valoracion</label>
-                        <select id="valoracion" name="valoracion" required>
-                            <option value="5">⭐⭐⭐⭐⭐(Excelente)</option>
-                            <option value="4">⭐⭐⭐⭐(Bueno)</option>
-                            <option value="3">⭐⭐⭐(Regular)</option>
-                            <option value="2">⭐⭐(Malo)</option>
-                            <option value="1">⭐(Pesimo)</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="form-group-full-width">
-                    <label for="descripcion">Descripcion</label>
-                    <textarea name="descripcion" id="descripcion" rows="6" placeholder="escripbe los detalles aqui..." required></textarea>
-                </div>
-                <div class="form-actions-full-width">
-                    <button type="submit" class="btn-submit">Guardar Entrada</button>
-                </div>
-            </form>
-        </section>
     </main>
-
-    <footer>
-
-    </footer>
 </body>
 </html>
