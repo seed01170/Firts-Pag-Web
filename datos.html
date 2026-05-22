@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu-lateral.css">
+    <link rel="stylesheet" href="historial.css">
+    <title>Historial - Mi Pag Web</title>
+</head>
+<body>
+    <input type="checkbox" id="btn-menu" class="checkbox-control">
+    <label for="btn-menu" class="toggle-btn">☰</label>
+
+    <div class="layout-container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h3>mi pag web</h3>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><span class="menu-icon">📊</span><span class="menu-text">Dashboard</span></a></li>
+                <li><a href="registro.html"><span class="menu-icon">🗒️</span><span class="menu-text">Registro</span></a></li>
+                <li><a href="datos.html"><span class="menu-icon">📋</span><span class="menu-text">Historial</span></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="history-container">
+            <div class="history-header">
+                <h2>Historial de Entradas</h2>
+            </div>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Título</th>
+                            <th>Categoría</th>
+                            <th>Valoración</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>18 May 2026</td>
+                            <td>Reunión de coordinación</td>
+                            <td><span class="badge badge-trabajo">Trabajo</span></td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>15 May 2026</td>
+                            <td>Planificación fin de semana</td>
+                            <td><span class="badge badge-personal">Personal</span></td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>10 May 2026</td>
+                            <td>Concepto de nueva interfaz</td>
+                            <td><span class="badge badge-ideas">Ideas</span></td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
